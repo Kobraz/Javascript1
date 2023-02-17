@@ -51,5 +51,5 @@ img {
 	font-weight: bold;
 	border-top: 2px solid blue;
 	border-bottom: 2px solid blue;
-	cursor: progress;
+	cursor: pointer;
 }
