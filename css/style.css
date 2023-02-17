@@ -12,7 +12,7 @@ h1 {
 img {
 	width: 80px;
 	border-radius: 15px;
-	border: 2px solid red;
+	border: 1px solid black;
 }
 
 /*In case I want to hover the images on the first page*/
@@ -70,3 +70,6 @@ img {
 	background-color: #ffe9e9;
 }
 
+tr:hover td img {
+	border: 6px solid #810000;
+}
