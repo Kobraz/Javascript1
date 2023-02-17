@@ -54,7 +54,7 @@ img {
 .table tbody tr:hover {
 	color: rgb(2, 2, 90);
 	font-weight: bold;
-	border-top: 2px solid blue;
-	border-bottom: 2px solid blue;
+	border-top: 2px solid rgb(255, 0, 0);
+	border-bottom: 2px solid rgb(255, 0, 0);
 	cursor: pointer;
 }
