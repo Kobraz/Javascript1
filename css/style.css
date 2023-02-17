@@ -64,12 +64,12 @@ img {
 .table tbody tr:hover {
 	color: rgb(0, 0, 0);
 	font-weight: bold;
-	border-top: 2px solid rgb(255, 0, 0);
-	border-bottom: 2px solid rgb(255, 0, 0);
+	border-top: 2px solid #810000;
+	border-bottom: 2px solid #810000;
 	cursor: pointer;
 	background-color: #ffe9e9;
 }
 
 tr:hover td img {
-	border: 6px solid #810000;
+	border: 2px solid #810000;
 }
