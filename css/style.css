@@ -67,3 +67,8 @@ img:hover {
 	cursor: pointer;
 	background-color: #ffe9e9;
 }
+
+.table tbody tr img:hover {
+	width: 120px;
+	border: 3px solid red;
+}
