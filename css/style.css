@@ -15,16 +15,15 @@ img {
 .container {
 	width: 90%;
 	justify-content: center;
-
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .table {
-	margin-left: 5%;
-	margin-right: 5%;
 	font-size: 16px;
 	border-collapse: collapse;
 	box-shadow: 0 20px 20px #a2a7ab;
-	border-radius: 10px 10px 6px 6px;
+	border-radius: 10px 10px 8px 8px;
 	overflow: hidden;
 }
 
@@ -49,7 +48,7 @@ img {
 }
 
 .table tbody tr:last-of-type {
-	border-bottom: 6px solid #810000
+	border-bottom: 8px solid #810000
 }
 
 .table tbody tr:hover {
@@ -58,5 +57,5 @@ img {
 	border-top: 2px solid rgb(255, 0, 0);
 	border-bottom: 2px solid rgb(255, 0, 0);
 	cursor: pointer;
-	background-color: #fce0e0;
+	background-color: #e6d4d4;
 }
