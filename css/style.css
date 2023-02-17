@@ -14,10 +14,10 @@ img {
 	border: 2px solid red;
 }
 
-img:hover {
+/* img:hover {
 	width: 120px;
 	border: 3px solid red;
-}
+} */
 
 .container {
 	width: 90%;
@@ -68,7 +68,3 @@ img:hover {
 	background-color: #ffe9e9;
 }
 
-.table tbody tr img:hover {
-	width: 120px;
-	border: 3px solid red;
-}
