@@ -28,6 +28,7 @@ img {
 }
 
 .table thead tr {
+	font-family: 'Poppins', sans-serif;
 	text-align: left;
 	font-size: 20px;
 	font-weight: 200;
