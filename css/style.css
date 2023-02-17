@@ -12,6 +12,10 @@ img {
 	width: 100px;
 }
 
+.container {
+	width: 90%;
+}
+
 .table {
 	margin-left: auto;
 	margin-right: auto;
