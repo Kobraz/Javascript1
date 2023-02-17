@@ -14,7 +14,7 @@ img {
 
 .container {
 	width: 90%;
-	align-content: center;
+	justify-content: center;
 }
 
 .table {
