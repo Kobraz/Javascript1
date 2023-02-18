@@ -23,3 +23,22 @@ h3 {
     margin-bottom: 5px;
 
 }
+
+#form {
+    position: relative;
+}
+
+#form #email {
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+}
+
+#form #inputBox {
+    position: relative;
+}
