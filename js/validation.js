@@ -21,13 +21,13 @@ function validation() {
     if (email.match(regex)) {
         form.classList.add("Valid");
         form.classList.remove("Invalid");
-        Text.innerHTML = "Valid email";
-        Text.style.color = "#00ff00";
+        text.innerHTML = "Valid email";
+        text.style.color = "#00ff00";
     }
     else {
         form.classList.add("Invalid");
         form.classList.remove("Valid");
-        Text.innerHTML = "Invalid email";
-        Text.style.color = "#ff0000";
+        text.innerHTML = "Invalid email";
+        text.style.color = "#ff0000";
     }
 }
