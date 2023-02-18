@@ -16,18 +16,18 @@ function validation() {
     var form = document.getElementById("form");
     var form = document.getElementById("email").value;
     var form = document.getElementById("text");
-    var pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    const regex = /\S+@\S+\.\S+/;
 
-    if (email.match(pattern)) {
+    if (email.match(regex)) {
         form.classList.add("Valid");
         form.classList.remove("Invalid");
-        Text.innerHTML = "Valid email"
+        Text.innerHTML = "Valid email";
         Text.style.color = "#00ff00";
     }
     else {
         form.classList.add("Invalid");
         form.classList.remove("Valid");
-        Text.innerHTML = "Invalid email"
+        Text.innerHTML = "Invalid email";
         Text.style.color = "#ff0000";
     }
 }
