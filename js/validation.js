@@ -13,10 +13,10 @@
 
 
 function validation() {
-    var form = document.getElementById("form");
-    var form = document.getElementById("email").value;
-    var form = document.getElementById("text");
-    const regex = /\S+@\S+\.\S+/;
+    // var form = document.getElementById("form");
+    var email = document.getElementById("email").value;
+    // var form = document.getElementById("text");
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
     if (email.match(regex)) {
         form.classList.add("Valid");
