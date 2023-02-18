@@ -42,6 +42,8 @@ h1 {
 
 #form #inputBox {
     position: relative;
-    display: flex;
-    flex-direction: column;
+}
+
+span {
+    display: block;
 }
