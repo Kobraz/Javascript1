@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
-    
 
-    <form class="card">
-        <div class="form-field">
-            <label arial-label="hamburger"><span class="hidden"></span></label>
-        </div>
-        <div class="form-field">
-            <label for="email">Email</label>
-            <label id="email-error"></label>
-            <input type="email" id="email" name="email" required>
+    <h1>Email validaton</h1>
+    
+    <form id="form" action="#">
+        <div class="inputBox">
+            <input type="text" id="email" name="email" placeholder="Enter e-mail address" required>
+            <span id="text"></span>
         </div>
     </form>
 
