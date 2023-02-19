@@ -61,6 +61,30 @@ h1 {
     margin: 2px 0;
 }
 
+#form #subj {
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+    margin: 2px 0;
+}
+
+#form #addr {
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+    margin: 2px 0;
+}
+
 #form #inputBox {    
     display: flex;
     flex-direction: column;
