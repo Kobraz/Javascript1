@@ -23,13 +23,18 @@
         </div>
         <div class="inputBox">
             <p><label for="Subject" id="label">Subject:</label></p>
-            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" onkeydown="subjValidation(document.form1.text1,6,8)">
-            <p><span id="nametext"></span></p>
+            <input type="text" id="subj" name="subj" required minlength="4" maxlength="8" size="10" onkeydown="subjValidation(document.form1.text1,6,8)">
+            <p><span id="subjtext"></span></p>
         </div>
         <div class="inputBox">
             <p><label for="Email" id="label">E-mail:</label></p>
             <input type="text" id="email" name="email" placeholder="Enter e-mail address" onkeydown="mailValidation()">
             <span id="emailtext"></span>
+        </div>
+        <div class="inputBox">
+            <p><label for="Address" id="label">Address:</label></p>
+            <input type="text" id="addr" name="addr" required minlength="4" maxlength="8" size="10" onkeydown="addrValidation(document.form1.text1,6,8)">
+            <p><span id="addrtext"></span></p>
         </div>
     </form>
 
