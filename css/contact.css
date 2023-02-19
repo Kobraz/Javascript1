@@ -23,6 +23,7 @@ body {
     width: 60%;
     height: 500px;
     background: #373737;
+    border: 2px solid grey;
     border-radius: 25px;
 }
 
