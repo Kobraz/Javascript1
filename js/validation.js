@@ -5,8 +5,8 @@ function mailValidation() {
     if (email.match(regex)) {
         form.classList.add("Valid");
         form.classList.remove("Invalid");
-        emailtext.innerHTML = "&#x2714;";
-        emailtext.style.color = "#00ff00";
+        emailtextok.innerHTML = "&#x2714;";
+        emailtextok.style.color = "#00ff00";
     }
     else {
         form.classList.add("Invalid");
@@ -22,8 +22,8 @@ function nameValidation() {
     nametext.innerHTML = nameLength;
     
     if(name.length != 0) {
-        nametext.innerHTML = "&#x2714;";
-        nametext.style.color = "#00ff00";
+        nametextok.innerHTML = "&#x2714;";
+        nametextok.style.color = "#00ff00";
     }
     else {
         nametext.innerHTML = "Name required";
@@ -37,8 +37,8 @@ function subjValidation() {
     subjtext.innerHTML = subjLength;
     
     if(subj.length >= 10) {
-    subjtext.innerHTML = "&#x2714;";
-        subjtext.style.color = "#00ff00";
+        subjtextok.innerHTML = "&#x2714;";
+        subjtextok.style.color = "#00ff00";
     }
     else {
         subjtext.innerHTML = "Subject must be 10 chars";
@@ -52,8 +52,8 @@ function addrValidation() {
     addrtext.innerHTML = addrLength;
     
     if(addr.length >= 25) {
-        addrtext.innerHTML = "&#x2714;";
-        addrtext.style.color = "#00ff00";
+        addrtextok.innerHTML = "&#x2714;";
+        addrtextok.style.color = "#00ff00";
     }
     else {
         addrtext.innerHTML = "Address must be 25 chars";
