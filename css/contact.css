@@ -21,34 +21,12 @@ main {
     gap: 4em;
   }
 
-.grid {
-    display: grid;
-    width: 500px;
-    grid-gap: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
-    align-items: start;
-}
-
-.grid-item {
-    background-color: #fff;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-    transition: 0.2s;
-}
-
-.grid-item:hover {
-    transform: translatey(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.3);
-
-}
-
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 500px;
     height: 500px;
     background: #373737;
     border: 2px solid red;
