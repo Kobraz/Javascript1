@@ -12,41 +12,42 @@
 </head>
 <body>
 
-    
-    <div class="grid">
-        <div class="grid-item">
+    <main>
+        <div class="grid">
+            <div class="grid-item">
 
-            <div class="card">
+                <div class="card">
 
-                <h1>Contact form</h1>
+                    <h1>Contact form</h1>
 
-                <form id="form" action="#">
-                    <div class="inputBox">
-                        <p><label for="Name" id="label">Name:</label></p>
-                        <input type="text" id="name" name="name" maxlength="40" size="10" onkeydown="nameValidation()">
-                        <p><span id="nametext"></span></p>
-                    </div>
-                    <div class="inputBox">
-                        <p><label for="Subject" id="label">Subject:</label></p>
-                        <input type="text" id="subj" name="subj" maxlength="40" size="10" onkeydown="subjValidation()">
-                        <p><span id="subjtext"></span></p>
-                    </div>
-                    <div class="inputBox">
-                        <p><label for="Email" id="label">E-mail:</label></p>
-                        <input type="text" id="email" name="email" placeholder="Enter e-mail address" onkeydown="mailValidation()">
-                        <p><span id="emailtext"></span></p>
-                    </div>
-                    <div class="inputBox">
-                        <p><label for="Address" id="label">Address:</label></p>
-                        <input type="text" id="addr" name="addr" maxlength="40" size="10" onkeydown="addrValidation()">
-                        <p><span id="addrtext"></span></p>
-                    </div>
-                </form>
+                    <form id="form" action="#">
+                        <div class="inputBox">
+                            <p><label for="Name" id="label">Name:</label></p>
+                            <input type="text" id="name" name="name" maxlength="40" size="10" onkeydown="nameValidation()">
+                            <p><span id="nametext"></span></p>
+                        </div>
+                        <div class="inputBox">
+                            <p><label for="Subject" id="label">Subject:</label></p>
+                            <input type="text" id="subj" name="subj" maxlength="40" size="10" onkeydown="subjValidation()">
+                            <p><span id="subjtext"></span></p>
+                        </div>
+                        <div class="inputBox">
+                            <p><label for="Email" id="label">E-mail:</label></p>
+                            <input type="text" id="email" name="email" placeholder="Enter e-mail address" onkeydown="mailValidation()">
+                            <p><span id="emailtext"></span></p>
+                        </div>
+                        <div class="inputBox">
+                            <p><label for="Address" id="label">Address:</label></p>
+                            <input type="text" id="addr" name="addr" maxlength="40" size="10" onkeydown="addrValidation()">
+                            <p><span id="addrtext"></span></p>
+                        </div>
+                    </form>
+
+                </div>
 
             </div>
-
         </div>
-    </div>
+    </main>
 
     <script src="js/validation.js"></script>
 </body>
