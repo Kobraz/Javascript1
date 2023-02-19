@@ -5,7 +5,7 @@ function mailValidation() {
     if (email.match(regex)) {
         form.classList.add("Valid");
         form.classList.remove("Invalid");
-        emailtext.innerHTML = "Valid email";
+        emailtext.innerHTML = "&#x2714;";
         emailtext.style.color = "#00ff00";
     }
     else {
@@ -22,7 +22,7 @@ function nameValidation() {
     nametext.innerHTML = nameLength;
     
     if(name.length != 0) {
-        nametext.innerHTML = "Name OK";
+        nametext.innerHTML = "&#x2714;";
         nametext.style.color = "#00ff00";
     }
     else {
@@ -52,7 +52,7 @@ function addrValidation() {
     addrtext.innerHTML = addrLength;
     
     if(addr.length >= 25) {
-        addrtext.innerHTML = "Address OK";
+        addrtext.innerHTML = "&#x2714;";
         addrtext.style.color = "#00ff00";
     }
     else {
