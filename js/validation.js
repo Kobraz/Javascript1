@@ -37,7 +37,7 @@ function subjValidation() {
     subjtext.innerHTML = subjLength;
     
     if(subj.length >= 10) {
-        subjtext.innerHTML = "Subject OK";
+        subjtext.innerHTML = "<i class="fa-solid fa-check"></i>";
         subjtext.style.color = "#00ff00";
     }
     else {
