@@ -23,6 +23,7 @@ body {
     width: 60%;
     height: 500px;
     background: #373737;
+    border-radius: 25px;
 }
 
 h1 {
