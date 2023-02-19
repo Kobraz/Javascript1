@@ -36,7 +36,7 @@ function subjValidation() {
     var subjLength = subj.length;
     subjtext.innerHTML = subjLength;
     
-    if(subj.length >= 5) {
+    if(subj.length >= 10) {
         subjtext.innerHTML = "Subject length OK";
         subjtext.style.color = "#00ff00";
     }
@@ -51,7 +51,7 @@ function addrValidation() {
     var addrLength = addr.length;
     addrtext.innerHTML = addrLength;
     
-    if(addr.length >= 5) {
+    if(addr.length >= 25) {
         addrtext.innerHTML = "Subject length OK";
         addrtext.style.color = "#00ff00";
     }
