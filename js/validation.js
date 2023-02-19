@@ -37,11 +37,11 @@ function subjValidation() {
     subjtext.innerHTML = subjLength;
     
     if(subj.length >= 10) {
-        subjtext.innerHTML = "Subject length OK";
+        subjtext.innerHTML = "Subject OK";
         subjtext.style.color = "#00ff00";
     }
     else {
-        subjtext.innerHTML = "Subject too short";
+        subjtext.innerHTML = "Subject must be 10 chars";
         subjtext.style.color = "#ff2400";
     }
 }
@@ -52,11 +52,11 @@ function addrValidation() {
     addrtext.innerHTML = addrLength;
     
     if(addr.length >= 25) {
-        addrtext.innerHTML = "Subject length OK";
+        addrtext.innerHTML = "Address OK";
         addrtext.style.color = "#00ff00";
     }
     else {
-        addrtext.innerHTML = "Subject too short";
+        addrtext.innerHTML = "Address must be 25 chars";
         addrtext.style.color = "#ff2400";
     }
 }
