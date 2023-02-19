@@ -21,12 +21,12 @@ function nameValidation() {
     var nameLength = name.length;
     nametext.innerHTML = nameLength;
     
-    if(name.length >= 5) {
-        nametext.innerHTML = "Name length OK";
+    if(name.length != null) {
+        nametext.innerHTML = "Name OK";
         nametext.style.color = "#00ff00";
     }
     else {
-        nametext.innerHTML = "Name too short";
+        nametext.innerHTML = "Name required";
         nametext.style.color = "#ff2400";
     }
 }
