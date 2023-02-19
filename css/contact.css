@@ -28,6 +28,11 @@ body {
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
 }
 
+.card:hover {
+    transform: translatey(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
 h1 {
     position: relative;
     font-size: 20px;
