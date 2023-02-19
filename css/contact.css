@@ -23,8 +23,9 @@ body {
     width: 60%;
     height: 500px;
     background: #373737;
-    border: 2px solid grey;
+    border: 2px solid red;
     border-radius: 25px;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
 }
 
 h1 {
