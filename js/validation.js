@@ -21,7 +21,7 @@ function nameValidation() {
     var nameLength = name.length;
     nametext.innerHTML = nameLength;
     
-    if(name.length != null) {
+    if(name.length != 0) {
         nametext.innerHTML = "Name OK";
         nametext.style.color = "#00ff00";
     }
