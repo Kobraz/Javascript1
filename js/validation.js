@@ -12,7 +12,7 @@ function mailValidation() {
         form.classList.add("Invalid");
         form.classList.remove("Valid");
         emailtext.innerHTML = "Invalid email";
-        emailtext.style.color = "#ff0000";
+        emailtext.style.color = "#ff2400";
     }
 }
 
