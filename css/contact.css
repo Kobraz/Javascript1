@@ -114,29 +114,18 @@ h1 {
     font-weight: 400;
 }
 
-#nametext {
+#nametext #subjtext #emailtext #addrtext {
     font-family: 'Poppins', sans-serif;
-    font-size: 12.5px;
+    font-size: 14px;
     font-weight: 400;
 }
 
-#subjtext {
+#nametextok #subjtextok #emailtextok #addrtextok {
     font-family: 'Poppins', sans-serif;
-    font-size: 12.5px;
+    font-size: 12px;
     font-weight: 400;
 }
 
-#emailtext {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12.5px;
-    font-weight: 400;
-}
-
-#addrtext {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12.5px;
-    font-weight: 400;
-}
 
 
 
