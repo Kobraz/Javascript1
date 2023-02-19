@@ -5,7 +5,7 @@ function mailValidation() {
     if (email.match(regex)) {
         form.classList.add("Valid");
         form.classList.remove("Invalid");
-        emailtextok.innerHTML = "&#x2714;";
+        emailtextok.innerHTML = " &#x2714;";
         emailtextok.style.color = "#00ff00";
         emailtext.innerHTML = "";
     }
@@ -23,7 +23,7 @@ function nameValidation() {
     nametext.innerHTML = nameLength;
     
     if(name.length != 0) {
-        nametextok.innerHTML = "&#x2714;";
+        nametextok.innerHTML = " &#x2714;";
         nametextok.style.color = "#00ff00";
         nametext.innerHTML = "";
     }
@@ -39,7 +39,7 @@ function subjValidation() {
     subjtext.innerHTML = subjLength;
     
     if(subj.length >= 10) {
-        subjtextok.innerHTML = "&#x2714;";
+        subjtextok.innerHTML = " &#x2714;";
         subjtextok.style.color = "#00ff00";
         subjtext.innerHTML = "";
     }
@@ -55,7 +55,7 @@ function addrValidation() {
     addrtext.innerHTML = addrLength;
     
     if(addr.length >= 25) {
-        addrtextok.innerHTML = "&#x2714;";
+        addrtextok.innerHTML = " &#x2714;";
         addrtextok.style.color = "#00ff00";
         addrtext.innerHTML = "";
     }
