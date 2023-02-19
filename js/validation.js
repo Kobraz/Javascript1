@@ -12,7 +12,7 @@ function mailValidation() {
         form.classList.add("Invalid");
         form.classList.remove("Valid");
         emailtext.innerHTML = "Email must be valid format";
-        emailtext.style.color = "#ff2400";
+        emailtext.style.color = "#ff3333";
     }
 }
 
@@ -27,7 +27,7 @@ function nameValidation() {
     }
     else {
         nametext.innerHTML = "Name required";
-        nametext.style.color = "#ff2400";
+        nametext.style.color = "#ff3333";
     }
 }
 
@@ -42,7 +42,7 @@ function subjValidation() {
     }
     else {
         subjtext.innerHTML = "Subject must be 10 chars";
-        subjtext.style.color = "#ff2400";
+        subjtext.style.color = "#ff3333";
     }
 }
 
@@ -57,6 +57,6 @@ function addrValidation() {
     }
     else {
         addrtext.innerHTML = "Address must be 25 chars";
-        addrtext.style.color = "#ff2400";
+        addrtext.style.color = "#ff3333";
     }
 }
