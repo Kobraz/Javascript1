@@ -30,3 +30,33 @@ function nameValidation() {
         nametext.style.color = "#ff2400";
     }
 }
+
+function subjValidation() {
+    var subj = document.getElementById("subj").value;
+    var subjLength = subj.length;
+    subjtext.innerHTML = subjLength;
+    
+    if(subj.length >= 5) {
+        subjtext.innerHTML = "Subject length OK";
+        subjtext.style.color = "#00ff00";
+    }
+    else {
+        subjtext.innerHTML = "Subject too short";
+        subjtext.style.color = "#ff2400";
+    }
+}
+
+function addrValidation() {
+    var addr = document.getElementById("addr").value;
+    var addrLength = addr.length;
+    addrtext.innerHTML = addrLength;
+    
+    if(addr.length >= 5) {
+        addrtext.innerHTML = "Subject length OK";
+        addrtext.style.color = "#00ff00";
+    }
+    else {
+        addrtext.innerHTML = "Subject too short";
+        addrtext.style.color = "#ff2400";
+    }
+}
