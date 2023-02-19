@@ -11,7 +11,7 @@ function mailValidation() {
     else {
         form.classList.add("Invalid");
         form.classList.remove("Valid");
-        emailtext.innerHTML = "Invalid email";
+        emailtext.innerHTML = "Email must be valid format";
         emailtext.style.color = "#ff2400";
     }
 }
