@@ -29,7 +29,7 @@ async function getDetail() {
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
-
+}.then((objectData)=>{
     let tableData = "";
     objectData((data)=>{
                 tableData+=` <div>
