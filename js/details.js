@@ -8,11 +8,11 @@ console.log(id);
 
 const url = "https://fakestoreapi.com/products/" + id;
 
-fetch(`${url}`).then((data)=>{
+fetch(${url}).then((data)=>{
     
     return data.json();
 }).then((objectData)=>{
-    console.log(objectData[0].title);
+    //console.log(objectData[0].title);
     let tableData="";
     objectData.map((values)=>{
         tableData+=` <div>
