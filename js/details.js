@@ -26,9 +26,9 @@ const url = 'https://fakestoreapi.com/products/' + id;
 //     });
 
 async function getDetail() {
-    Const response = await fetch(url);
-    Const data = await response.json();
-    Console.log(data);
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
  }
 
     document.getElementById("tableBody").innerHTML=tableData;
