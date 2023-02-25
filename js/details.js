@@ -8,22 +8,29 @@ console.log(id);
 
 const url = 'https://fakestoreapi.com/products/' + id;
 
-fetch(url).then((data)=>{
+// fetch(url).then((data)=>{
     
-    return data.json();
-}).then((objectData)=>{
-    console.log(objectData.title, objectData.price);
-    console.log(data.json());
-    let tableData="";
-    objectData((values)=>{
-        tableData+=` <div>
-        <td>${values.title}</td>
-        <td>${values.description}</td>
-        <td>${values.category}</td>
-        <td>${values.price}</td>
-        <td><img src="${values.image}"></td>
-        </tr>`;
-    });
+//     return data.json();
+// }).then((objectData)=>{
+//     console.log(objectData.title, objectData.price);
+//     console.log(data.json());
+//     let tableData="";
+//     objectData((values)=>{
+//         tableData+=` <div>
+//         <td>${values.title}</td>
+//         <td>${values.description}</td>
+//         <td>${values.category}</td>
+//         <td>${values.price}</td>
+//         <td><img src="${values.image}"></td>
+//         </tr>`;
+//     });
+
+async function getDetail() {
+    Const response = await fetch(url);
+    Const data = await response.json();
+    Console.log(data);
+ }
+
     document.getElementById("tableBody").innerHTML=tableData;
 }).catch((err)=>{
     console.log(err);
