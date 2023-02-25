@@ -31,13 +31,13 @@ async function getDetail() {
     console.log(data);
 
     let tableData = "";
-    objectData((values)=>{
+    objectData((data)=>{
                 tableData+=` <div>
-                <td>${values.title}</td>
-                <td>${values.description}</td>
-                <td>${values.category}</td>
-                <td>${values.price}</td>
-                <td><img src="${values.image}"></td>
+                <td>${data.title}</td>
+                <td>${data.description}</td>
+                <td>${data.category}</td>
+                <td>${data.price}</td>
+                <td><img src="${data.image}"></td>
                 </tr>`;
             });
  }
