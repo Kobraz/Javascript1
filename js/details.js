@@ -35,7 +35,7 @@ async function getDetail() {
     titleContainer.innerHTML += `<div>${data.title}</div>`;
     categoryContainer.innerHTML += `<div>${data.category}</div>`;
     descriptionContainer.innerHTML += `<div>${data.description}</div>`;
-    imageContainer.innerHTML += `<div>${data.image}</div>`;
+    imageContainer.innerHTML += `<img src="${data.image}">`;
 }
 
 getDetail();
