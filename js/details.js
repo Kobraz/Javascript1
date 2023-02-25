@@ -1,10 +1,6 @@
 const query = document.location.search;
 
-console.log(query);
-
 const params = new URLSearchParams(query);
-
-console.log(params);
 
 const id = params.get("id");
 
