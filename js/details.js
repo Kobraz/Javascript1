@@ -28,7 +28,7 @@ const url = 'https://fakestoreapi.com/products/' + id;
 async function getDetail() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.title);
+    console.log(data);
  }
 
 getDetail();
