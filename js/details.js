@@ -14,7 +14,7 @@ fetch(url).then((data)=>{
 }).then((objectData)=>{
     //console.log(objectData[0].title);
     let tableData="";
-    objectData.map((value)=>{
+    objectData.map((values)=>{
         tableData+=` <div>
         <td>${values.title}</td>
         <td>${values.description}</td>
