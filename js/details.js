@@ -13,6 +13,7 @@ fetch(url).then((data)=>{
     return data.json();
 }).then((objectData)=>{
     console.log(objectData.title, objectData.price);
+    console.log(data.json());
     let tableData="";
     objectData((values)=>{
         tableData+=` <div>
@@ -28,4 +29,3 @@ fetch(url).then((data)=>{
     console.log(err);
 })
 
-console.log(data.json());
