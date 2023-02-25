@@ -28,4 +28,4 @@ fetch(url).then((data)=>{
     console.log(err);
 })
 
-//console.log(query);
+console.log(data.json());
