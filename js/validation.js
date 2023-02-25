@@ -14,6 +14,7 @@ function mailValidation() {
         form.classList.remove("Valid");
         emailtext.innerHTML = "Email must be valid format";
         emailtext.style.color = "#ff3333";
+        emailtextok.innerHTML = "";
     }
 }
 
@@ -30,6 +31,7 @@ function nameValidation() {
     else {
         nametext.innerHTML = "Name required";
         nametext.style.color = "#ff3333";
+        nametextok.innerHTML = "";
     }
 }
 
@@ -46,6 +48,7 @@ function subjValidation() {
     else {
         subjtext.innerHTML = "Subject must be 10 chars";
         subjtext.style.color = "#ff3333";
+        subjtextok.innerHTML = "";
     }
 }
 
@@ -62,5 +65,6 @@ function addrValidation() {
     else {
         addrtext.innerHTML = "Address must be 25 chars";
         addrtext.style.color = "#ff3333";
+        addrtextok.innerHTML = "";
     }
 }
