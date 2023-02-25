@@ -33,6 +33,6 @@ async function getDetail() {
 
 //     document.getElementById("tableBody").innerHTML=tableData;
 // }).catch((err)=>{
-    console.log(err);
-})
+//     console.log(err);
+// })
 
