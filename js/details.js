@@ -1,4 +1,4 @@
-const query = document.location.search
+const query = document.location.search;
 
 
 fetch(`https://fakestoreapi.com/products/${query}`).then((data)=>{
