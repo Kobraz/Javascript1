@@ -6,7 +6,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "https://fakestoreapi.com/products/" + id;
+const url = 'https://fakestoreapi.com/products/' + id;
 
 fetch(url).then((data)=>{
     
