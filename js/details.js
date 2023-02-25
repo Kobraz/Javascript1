@@ -4,7 +4,11 @@ console.log(query);
 
 const params = new URLSearchParams(query);
 
-console.log(params)
+console.log(params);
+
+const id = params.get("id");
+
+console.log(id);
 
 fetch(`https://fakestoreapi.com/products/${query}`).then((data)=>{
     
