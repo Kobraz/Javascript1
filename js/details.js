@@ -31,6 +31,8 @@ async function getDetail() {
     console.log(data);
 
     title.innerHTML += `<div>${data.title}</div>`;
+    titleContainer.innerHTML += `<div>${data.title}</div>`;
+    categoryContainer.innerHTML += `<div>${data.category}</div>`;
 }
 
 getDetail();
