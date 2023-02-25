@@ -73,3 +73,27 @@ img {
 tr:hover td img {
 	border: 2px solid #810000;
 }
+
+#titleContainer {
+	background-color: beige;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#categoryContainer {
+	background-color: beige;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#descriptionContainer {
+	background-color: beige;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#imageContainer {
+	background-color: beige;
+	border: 1px solid black;
+	border-radius: 10px;
+}
