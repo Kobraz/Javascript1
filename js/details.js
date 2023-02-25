@@ -29,18 +29,9 @@ async function getDetail() {
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
-}.then((objectData)=>{
-    let tableData = "";
-    objectData((data)=>{
-                tableData+=` <div>
-                <td>${data.title}</td>
-                <td>${data.description}</td>
-                <td>${data.category}</td>
-                <td>${data.price}</td>
-                <td><img src="${data.image}"></td>
-                </tr>`;
-            });
- }
+
+    container.innerHTML += `<div>${data.title}</div>`;
+}
 
 getDetail();
 
