@@ -16,9 +16,15 @@ img {
 }
 
 #imageContainer img {
-	width: 400px;
+	height: 200px;
 	border-radius: 15px;
-	border: 1px dotted black;
+	border: 1px dotted #333;
+}
+
+#imageContainer img:Hover {
+	height: 400px;
+	border-radius: 15px;
+	border: 1px dotted #333;
 }
 
 /*In case I want to hover the images on the first page*/
