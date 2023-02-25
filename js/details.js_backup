@@ -30,16 +30,16 @@ async function getDetail() {
     const data = await response.json();
     console.log(data);
 
-    let tableData = "";
-    objectData((values)=>{
-                tableData+=` <div>
-                <td>${values.title}</td>
-                <td>${values.description}</td>
-                <td>${values.category}</td>
-                <td>${values.price}</td>
-                <td><img src="${values.image}"></td>
-                </tr>`;
-            });
+    // let tableData = "";
+    // objectData((values)=>{
+    //             tableData+=` <div>
+    //             <td>${values.title}</td>
+    //             <td>${values.description}</td>
+    //             <td>${values.category}</td>
+    //             <td>${values.price}</td>
+    //             <td><img src="${values.image}"></td>
+    //             </tr>`;
+    //         });
  }
 
 getDetail();
