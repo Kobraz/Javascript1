@@ -16,13 +16,13 @@ img {
 }
 
 #imageContainer img {
-	height: 200px;
+	width: 200px;
 	border-radius: 15px;
 	border: 1px dotted #333;
 }
 
 #imageContainer img:Hover {
-	height: 400px;
+	width: 400px;
 	border-radius: 15px;
 	border: 1px dotted #333;
 }
