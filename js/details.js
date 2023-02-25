@@ -30,7 +30,7 @@ async function getDetail() {
     const data = await response.json();
     console.log(data);
 
-    container.innerHTML += `<div>${data.title}</div>`;
+    title.innerHTML += `<div>${data.title}</div>`;
 }
 
 getDetail();
