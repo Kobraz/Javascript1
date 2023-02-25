@@ -8,7 +8,7 @@ console.log(id);
 
 //const url = "https://fakestoreapi.com/products/" + id;
 
-fetch(`https://fakestoreapi.com/products/4`).then((data)=>{
+fetch(`https://fakestoreapi.com/products/`+id).then((data)=>{
     
     return data.json();
 }).then((objectData)=>{
