@@ -1,5 +1,10 @@
 const query = document.location.search;
 
+console.log(query);
+
+const params = new URLSearchParams(query);
+
+console.log(params)
 
 fetch(`https://fakestoreapi.com/products/${query}`).then((data)=>{
     
