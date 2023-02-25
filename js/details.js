@@ -1,4 +1,7 @@
-fetch(`https://fakestoreapi.com/products/${values.id}`).then((data)=>{
+const query = document.location.search
+
+
+fetch(`https://fakestoreapi.com/products/${query}`).then((data)=>{
     
     return data.json();
 }).then((objectData)=>{
