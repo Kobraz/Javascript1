@@ -6,7 +6,7 @@ const id = params.get("id");
 
 console.log(id);
 
-fetch(`https://fakestoreapi.com/products/${query}`).then((data)=>{
+fetch(`https://fakestoreapi.com/products/${id}`).then((data)=>{
     
     return data.json();
 }).then((objectData)=>{
