@@ -12,7 +12,7 @@ fetch(url).then((data)=>{
     
     return data.json();
 }).then((objectData)=>{
-    console.log(objectData[id].title);
+    console.log(objectData[4].title);
     let tableData="";
     objectData.map((values)=>{
         tableData+=` <div>
