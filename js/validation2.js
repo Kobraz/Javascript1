@@ -82,3 +82,4 @@ function validationOnSubmit() {
     }
 }
 
+alert(validationOnSubmit());
