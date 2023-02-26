@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loading");
-    loader.classList.add("loader-hidden");
+    loader.classList.add("loading-hidden");
     loader.addEventListener("transitionend", () => {
-        document.body.removeChild("loader");
+        document.body.removeChild("loading");
     })
 })
