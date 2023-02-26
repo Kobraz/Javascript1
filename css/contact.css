@@ -59,7 +59,7 @@ h1 {
     width: 300px;
     background: #292929;
     outline: none;
-    border: none;
+    border: 0.1px solid #585858;
     padding: 10px;
     border-radius: 6px;
     color: #fff;
@@ -71,7 +71,7 @@ h1 {
     width: 300px;
     background: #292929;
     outline: none;
-    border: none;
+    border: 0.1px solid #585858;
     padding: 10px;
     border-radius: 6px;
     color: #fff;
@@ -83,7 +83,7 @@ h1 {
     width: 300px;
     background: #292929;
     outline: none;
-    border: none;
+    border: 0.1px solid #585858;
     padding: 10px;
     border-radius: 6px;
     color: #fff;
@@ -95,7 +95,7 @@ h1 {
     width: 300px;
     background: #292929;
     outline: none;
-    border: 0.1px solid #868686;
+    border: 0.1px solid #585858;
     padding: 10px;
     border-radius: 6px;
     color: #fff;
@@ -103,8 +103,8 @@ h1 {
     margin: 2px 0;
 }
 
-#form #addr::marker {
-    border: 0.1px solid #fff;
+#form #addr: {
+    border: 0.1px solid #810000;
     background-color: #131313;
 }
 
