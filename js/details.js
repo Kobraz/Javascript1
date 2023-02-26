@@ -23,7 +23,7 @@ async function getDetail() {
     if(data == null) {
         titleContainer.innerHTML = "Error retrieving data";
     } else {
-        titleContainer.innerHTML += `<div>${data.title}</div>`;
+        // titleContainer.innerHTML += `<div>${data.title}</div>`;
     }
 
 }
