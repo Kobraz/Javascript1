@@ -21,11 +21,13 @@ async function getDetail() {
     imageContainer.innerHTML += `<img src="${data.image}">`;
 }
 
-try {
-    console.log(data.title);
-} catch (exc) {
-    alert("Error");
-}
+throw new Error("An unexpected error occurred");
+
+// try {
+//     console.log(data.title);
+// } catch (exc) {
+//     alert("Error");
+// }
 
 
 getDetail();
