@@ -260,9 +260,9 @@ tr:hover td img {
 
 @keyframes loading {
 	from{
-		transform: roatate(0turn);
+		transform: rotate(0turn);
 	}
 	to{
-		transform: roatate(1turn);
+		transform: rotate(1turn);
 	}
 }
