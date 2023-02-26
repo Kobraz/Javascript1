@@ -108,6 +108,7 @@ tr:hover td img {
 	margin: 20px;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 }
 
 #descriptionContainer {
