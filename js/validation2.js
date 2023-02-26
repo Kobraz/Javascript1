@@ -68,3 +68,17 @@ function addrValidation() {
         addrtextok.innerHTML = "";
     }
 }
+
+function validationOnSubmit() {
+    var testaddr = document.getElementById("addrtextok").value;
+    var testemail = document.getElementById("emailtextok").value;
+    var testsubj = document.getElementById("subjtextok").value;
+    var testname = document.getElementById("nametextok").value;
+
+    if(testaddr == " &#x2714;" || testemail == " &#x2714;" || testsubj == " &#x2714;" || testname == " &#x2714;") {
+        var output = "Success!!!"    
+    } else {
+        var output = "Failed!"
+    }
+}
+
