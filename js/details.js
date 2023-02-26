@@ -22,8 +22,7 @@ async function getDetail() {
 }
 .catch((err)=>{
     console.log(err);
-    const errorMessage = "Failed to load data";
-    error.innerhtml = errorMessage;
+    title.innerhtml = err;
 })
 
 getDetail();
