@@ -42,8 +42,8 @@ body {
     padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
-	position: absolute;
-	border: 2px solid pink;
+	display: flex;
+	flex-direction: column;
 }
 
 nav {
