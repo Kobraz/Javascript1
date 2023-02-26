@@ -8,23 +8,6 @@ console.log(id);
 
 const url = 'https://fakestoreapi.com/products/' + id;
 
-// fetch(url).then((data)=>{
-    
-//     return data.json();
-// }).then((objectData)=>{
-//     console.log(objectData.title, objectData.price);
-//     console.log(data.json());
-//     let tableData="";
-//     objectData((values)=>{
-//         tableData+=` <div>
-//         <td>${values.title}</td>
-//         <td>${values.description}</td>
-//         <td>${values.category}</td>
-//         <td>${values.price}</td>
-//         <td><img src="${values.image}"></td>
-//         </tr>`;
-//     });
-
 async function getDetail() {
     const response = await fetch(url);
     const data = await response.json();
@@ -37,11 +20,14 @@ async function getDetail() {
     descriptionContainer.innerHTML += `<div>${data.description}</div>`;
     imageContainer.innerHTML += `<img src="${data.image}">`;
 }
+.catch((err)=>{
+    console.log(err);
+    const errorMessage = "Failed to load data";
+    error.innerhtml = errorMessage;
+})
 
 getDetail();
 
-//     document.getElementById("tableBody").innerHTML=tableData;
-// }).catch((err)=>{
-//     console.log(err);
-// })
+
+
 
