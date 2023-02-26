@@ -20,11 +20,11 @@ async function getDetail() {
     descriptionContainer.innerHTML += `<div>${data.description}</div>`;
     imageContainer.innerHTML += `<img src="${data.image}">`;
 }
-// .catch((err)=>{
-//     console.log(err);
-//     const errorMessage = "Failed to load data";
-//     error.innerhtml = errorMessage;
-// })
+.catch((err)=>{
+    console.log(err);
+    const errorMessage = "Failed to load data";
+    error.innerhtml = errorMessage;
+})
 
 getDetail();
 
