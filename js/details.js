@@ -20,7 +20,7 @@ async function getDetail() {
     descriptionContainer.innerHTML += `<div>${data.description}</div>`;
     imageContainer.innerHTML += `<img src="${data.image}">`;
 
-    if(data == null) {
+    if(data == 'undefined') {
         titleContainer.innerHTML = "Error retrieving data";
     } else {
         // titleContainer.innerHTML += `<div>${data.title}</div>`;
