@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     min-height: 100vh;
     background: white;
@@ -141,7 +141,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(104, 104, 104);
+    background-color: #191919;
     color: white;
     font-weight: bold;
     border: 1px solid #810000;
