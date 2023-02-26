@@ -239,7 +239,7 @@ tr:hover td img {
     display: flex;
     justify-content: center;
 	align-content: center;
-	background-color: #f7f9fb;
+	background-color: #fff;
 	transition: opacity 0.75s, visibility 0.75s;
 }
 
