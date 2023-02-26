@@ -13,18 +13,18 @@ async function getDetail() {
     const data = await response.json();
     console.log(data);
 
-    // title.innerHTML += `<div>${data.title}</div>`;
+ 
     winTitle.innerHTML += `${data.title}`;
     titleContainer.innerHTML += `<div>${data.title}</div>`;
     categoryContainer.innerHTML += `<div>${data.category}</div>`;
     descriptionContainer.innerHTML += `<div>${data.description}</div>`;
     imageContainer.innerHTML += `<img src="${data.image}">`;
 }
-.catch((err)=>{
-    console.log(err);
-    const errorMessage = "Failed to load data";
-    error.innerhtml = errorMessage;
-})
+// .catch((err)=>{
+//     console.log(err);
+//     const errorMessage = "Failed to load data";
+//     error.innerhtml = errorMessage;
+// })
 
 getDetail();
 
