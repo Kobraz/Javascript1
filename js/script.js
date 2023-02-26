@@ -15,7 +15,5 @@ fetch("https://fakestoreapi.com/products").then((data)=>{
     document.getElementById("tableBody").innerHTML=tableData;
 
     //const apiArray = [${values.id},${values.title}, ${values.description}, ${values.price}, ${values.category}, ${values.rating}, ${values.image}]
-}).catch((err)=>{
-    console.log(err);
 })
 
