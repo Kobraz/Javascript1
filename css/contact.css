@@ -95,12 +95,17 @@ h1 {
     width: 300px;
     background: #292929;
     outline: none;
-    border: none;
+    border: 0.1px solid #868686;
     padding: 10px;
     border-radius: 6px;
     color: #fff;
     font-style: 18px;
     margin: 2px 0;
+}
+
+#form #addr:active {
+    border: 0.1px solid #fff;
+    background-color: #191919;
 }
 
 #form #inputBox {    
