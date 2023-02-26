@@ -24,7 +24,7 @@ img {
 #imageContainer img:Hover {
 	width: 400px;
 	border-radius: 15px;
-	
+	border: 1px dotted #fff;
 }
 
 /*In case I want to hover the images on the first page*/
