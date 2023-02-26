@@ -142,9 +142,9 @@ input[type=submit] {
 input[type=submit]:hover {
     font-family: 'Poppins', sans-serif;
     background-color: beige;
-    color: darkred;
+    color: #810000;
     font-weight: bold;
-    border: 2px solid red;
+    border: 1px solid #810000;
 }
 
 
