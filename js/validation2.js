@@ -76,10 +76,9 @@ function validationOnSubmit() {
     var testname = document.getElementById("nametextok").value;
 
     if(testaddr == " &#x2714;" || testemail == " &#x2714;" || testsubj == " &#x2714;" || testname == " &#x2714;") {
-        var output = "Success!!!"    
+        alert("Success!!!");    
     } else {
-        var output = "Failed!"
+        alert("Failed!!!");  
     }
 }
 
-alert(validationOnSubmit());
