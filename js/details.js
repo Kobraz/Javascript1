@@ -20,13 +20,14 @@ async function getDetail() {
     descriptionContainer.innerHTML += `<div>${data.description}</div>`;
     imageContainer.innerHTML += `<img src="${data.image}">`;
 }
-// .catch(err => {
-//     console.log(err);
-//     title.innerhtml = err;
-// })
 
 getDetail();
 
+if(data.title == null) {
+    titleContainer.innerHTML = "Feil";
+} else {
+    
+}
 
 
 
