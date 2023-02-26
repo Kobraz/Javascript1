@@ -98,7 +98,7 @@ tr:hover td img {
 
 #categoryContainer {
 	font-family: 'Poppins', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	color: white;
 	width: 200px;
 	background-color: black;
@@ -111,6 +111,9 @@ tr:hover td img {
 }
 
 #descriptionContainer {
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	color: rgb(0, 0, 0);
 	background-color: white;
 	border: 1px solid black;
 	border-radius: 10px;
