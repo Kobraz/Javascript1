@@ -252,7 +252,7 @@ tr:hover td img {
 	content: "";
 	width: 75px;
 	height: 75px;
-	border: 15px solid #fff;
+	border: 15px solid #ddd;
 	border-top-color: #810000;
 	border-radius: 50%;
 	animation: loading 0.75s ease infinite;
