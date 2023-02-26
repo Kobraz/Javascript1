@@ -103,7 +103,7 @@ h1 {
     margin: 2px 0;
 }
 
-#form #addr: {
+#form #addr:active {
     border: 0.1px solid #810000;
     background-color: #131313;
 }
