@@ -19,22 +19,18 @@ async function getDetail() {
     categoryContainer.innerHTML += `<div>${data.category}</div>`;
     descriptionContainer.innerHTML += `<div>${data.description}</div>`;
     imageContainer.innerHTML += `<img src="${data.image}">`;
-
-    if(data === undefined) {
-        titleContainer.innerHTML = "Error retrieving data";
-    } else {
-        // titleContainer.innerHTML += `<div>${data.title}</div>`;
-    }
-
 }
+
+try {
+    console.log(${data.title})
+} catch (exc) {
+    alert("Error")
+}
+
 
 getDetail();
 
-if(data.title == null) {
-    titleContainer.innerHTML = "Error retrieving data";
-} else {
 
-}
 
 
 
