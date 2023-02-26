@@ -2,13 +2,17 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-.pageTitle {
+/* .pageTitle {
     font-family: 'Lilita One', cursive;
     font-size: 40px;
     font-weight: bold;
     color: #810000;
     margin-left: 10px;
 	text-decoration: none;
+} */
+
+.pageTitle img {
+	border: none;
 }
 
 .navbar {
