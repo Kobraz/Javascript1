@@ -66,11 +66,18 @@ nav ul li a:hover {
     color: #810000;
 }
 
-h1 {
+h1 #index {
 	font-family: 'Poppins', sans-serif;
 	font-size: 35px;
 	text-align: center;
 	color: #810000;
+}
+
+h1 #contact {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	text-align: center;
+	color: #fff;
 }
 
 img {
