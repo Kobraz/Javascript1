@@ -67,6 +67,11 @@ h1 {
     margin: 2px 0;
 }
 
+#form #email:focus {
+    border: 0.1px solid #810000;
+    background-color: #131313;
+}
+
 #form #name {
     width: 300px;
     background: #292929;
@@ -77,6 +82,11 @@ h1 {
     color: #fff;
     font-style: 18px;
     margin: 2px 0;
+}
+
+#form #name:focus {
+    border: 0.1px solid #810000;
+    background-color: #131313;
 }
 
 #form #subj {
@@ -91,6 +101,11 @@ h1 {
     margin: 2px 0;
 }
 
+#form #subj:focus {
+    border: 0.1px solid #810000;
+    background-color: #131313;
+}
+
 #form #addr {
     width: 300px;
     background: #292929;
@@ -103,7 +118,7 @@ h1 {
     margin: 2px 0;
 }
 
-#form #addr:active {
+#form #addr:focus {
     border: 0.1px solid #810000;
     background-color: #131313;
 }
