@@ -46,10 +46,10 @@ body {
 	flex-direction: column;
 }
 
-nav {
+/* nav {
     flex: 1;
     text-align: right;
-}
+} */
 
 nav ul li {
     list-style: none;
