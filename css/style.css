@@ -76,6 +76,11 @@ nav ul li a:hover {
 
 }
 
+#vlink {
+	text-decoration: overline;
+	text-decoration: underline;
+}
+
 #index {
 	font-family: 'Poppins', sans-serif;
 	font-size: 35px;
