@@ -22,9 +22,9 @@ async function getDetail() {
 }
 
 try {
-    console.log(data.title)
+    console.log(data.title);
 } catch (exc) {
-    alert("Error")
+    alert("Error");
 }
 
 
