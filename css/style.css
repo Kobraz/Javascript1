@@ -230,7 +230,7 @@ tr:hover td img {
 
 
 
-.loader {
+.loading {
     position: fixed;
     top: 0;
     left: 0;
@@ -243,12 +243,12 @@ tr:hover td img {
 	transition: opacity 0.75s, visibility 0.75s;
 }
 
-.loader-hidden {
+.loading-hidden {
 	opacity: 0;
 	visibility: hidden;
 }
 
-.loader::after {
+.loading::after {
 	content: "";
 	width: 100px;
 	height: 100px;
