@@ -19,15 +19,22 @@ async function getDetail() {
     categoryContainer.innerHTML += `<div>${data.category}</div>`;
     descriptionContainer.innerHTML += `<div>${data.description}</div>`;
     imageContainer.innerHTML += `<img src="${data.image}">`;
+
+    try {
+        console.log(data.title);
+    } catch (err) {
+        alert("Error");
+    }
+
 }
 
 getDetail();
 
-try {
-    console.log(data.title);
-} catch (exc) {
-    alert("Error");
-}
+// try {
+//     console.log(data.title);
+// } catch (exc) {
+//     alert("Error");
+// }
 
 
 
