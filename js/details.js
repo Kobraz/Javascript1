@@ -23,18 +23,13 @@ async function getDetail() {
     try {
         console.log(data.title);
     } catch (err) {
-        alert("Error");
+        alert(err);
     }
 
 }
 
 getDetail();
 
-// try {
-//     console.log(data.title);
-// } catch (exc) {
-//     alert("Error");
-// }
 
 
 
