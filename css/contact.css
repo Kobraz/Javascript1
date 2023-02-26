@@ -151,7 +151,7 @@ input[type=text] {
     border: 0.1px solid #868686;
 }
 
-input[type=text]:hover {
+input[type=text]:active {
     border: 0.1px solid #fff;
     background-color: #191919;
 }
