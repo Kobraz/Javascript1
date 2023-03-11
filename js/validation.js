@@ -84,4 +84,4 @@ form.addEventListener('submit', () => {
 })
 
 
-console.log(addr.length);
+console.log(addr);
