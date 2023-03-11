@@ -88,10 +88,10 @@ form.addEventListener('submit', () => {
 })
 
 if(isValid === 4) {
-    document.getElementById("submitButton").style.display = "none";
+    document.getElementById("submitButton").style.display = "true";
 }
 else {
-    document.getElementById("submitButton").style.display = "true";
+    document.getElementById("submitButton").style.display = "none";
 }
 
 console.log(isValid.value);
