@@ -1,4 +1,7 @@
-var isValid = 0;
+var nameIsValid = 0;
+var subjIsValid = 0;
+var mailIsValid = 0;
+var addrIsValid = 0;
 
 function mailValidation() {
     var email = document.getElementById("email").value;
@@ -10,7 +13,7 @@ function mailValidation() {
         emailtextok.innerHTML = " &#x2714;";
         emailtextok.style.color = "#00ff00";
         emailtext.innerHTML = "";
-        isValid += 1;
+        mailIsValid = 1;
     }
     else {
         form.classList.add("Invalid");
@@ -18,7 +21,7 @@ function mailValidation() {
         emailtext.innerHTML = "Email must be valid format";
         emailtext.style.color = "#ff3333";
         emailtextok.innerHTML = "";
-        isValid += 0;
+        mailIsValid = 0;
     }
 }
 
@@ -31,13 +34,13 @@ function nameValidation() {
         nametextok.innerHTML = " &#x2714;";
         nametextok.style.color = "#00ff00";
         nametext.innerHTML = "";
-        isValid += 1;
+        nameIsValid = 1;
     }
     else {
         nametext.innerHTML = "Name required";
         nametext.style.color = "#ff3333";
         nametextok.innerHTML = "";
-        isValid += 0;
+        nameIsValid = 0;
     }
 }
 
@@ -50,13 +53,13 @@ function subjValidation() {
         subjtextok.innerHTML = " &#x2714;";
         subjtextok.style.color = "#00ff00";
         subjtext.innerHTML = "";
-        isValid += 1;
+        subjIsValid = 1;
     }
     else {
         subjtext.innerHTML = "Subject must be 10 chars";
         subjtext.style.color = "#ff3333";
         subjtextok.innerHTML = "";
-        isValid += 0;
+        subjIsValid = 0;
     }
 }
 
@@ -69,13 +72,13 @@ function addrValidation() {
         addrtextok.innerHTML = " &#x2714;";
         addrtextok.style.color = "#00ff00";
         addrtext.innerHTML = "";
-        isValid += 1;
+        addrIsValid = 1;
     }
     else {
         addrtext.innerHTML = "Address must be 25 chars";
         addrtext.style.color = "#ff3333";
         addrtextok.innerHTML = "";
-        isValid += 0;
+        addrIsValid = 0;
     }
 }
 
@@ -94,4 +97,7 @@ else {
     document.getElementById("submitButton").style.display = "none";
 }
 
-console.log(isValid);
+console.log("Name " + nameIsValid);
+console.log("Subj " + subjIsValid);
+console.log("Mail " + mailIsValid);
+console.log("Addr " + addrIsValid);
