@@ -75,4 +75,5 @@ form.addEventListener('submit', () => {
     subjValidation();
     mailValidation();
     addrValidation();
+    console.log(addrtext.length);
 })
