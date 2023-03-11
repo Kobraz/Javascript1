@@ -90,6 +90,8 @@ form.addEventListener('submit', () => {
     addrValidation();
 })
 
+var isValid = nameIsValid + subjIsValid + mailIsValid + addrIsValid;
+
 if(isValid === 4) {
     document.getElementById("submitButton").style.display = "true";
 }
