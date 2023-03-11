@@ -81,5 +81,7 @@ form.addEventListener('submit', () => {
     subjValidation();
     mailValidation();
     addrValidation();
-    console.log(addrtext.length);
 })
+
+
+console.log(addr.length);
