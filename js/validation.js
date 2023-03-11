@@ -68,3 +68,11 @@ function addrValidation() {
         addrtextok.innerHTML = "";
     }
 }
+
+const form = document.getElementById('form');
+form.addEventListener('submit', () => {
+    nameValidation();
+    subjValidation();
+    mailValidation();
+    addrValidation();
+})
