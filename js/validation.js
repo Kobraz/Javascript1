@@ -1,4 +1,4 @@
-var isValid = 0;
+var isValid = 8;
 
 function mailValidation() {
     var email = document.getElementById("email").value;
