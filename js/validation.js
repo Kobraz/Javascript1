@@ -121,12 +121,12 @@ function isValid(){
         var addrValidated = false;
     }
 
-    const condArray = [
+    const condArray = {
         nameValidated,
         subjValidated,
         mailValidated,
         addrValidated,
-    ]
+    }
 
     if (condArray === true) {
         submitButton.innerHTML.value = "SUBMIT";
