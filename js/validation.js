@@ -134,6 +134,4 @@ function isValid(){
     else {
         submitButton.innerHTML.value = "";
     }
-
-    ]
 }
