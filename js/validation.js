@@ -83,5 +83,4 @@ form.addEventListener('submit', () => {
     addrValidation();
 })
 
-
-console.log(addr);
+console.log("Hei");
