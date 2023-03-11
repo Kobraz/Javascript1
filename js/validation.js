@@ -103,3 +103,4 @@ console.log("Name " + nameIsValid);
 console.log("Subj " + subjIsValid);
 console.log("Mail " + mailIsValid);
 console.log("Addr " + addrIsValid);
+console.log("Total " + isValid);
