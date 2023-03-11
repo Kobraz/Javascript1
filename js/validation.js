@@ -1,3 +1,5 @@
+var isValid = 0;
+
 function mailValidation() {
     var email = document.getElementById("email").value;
     const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -8,6 +10,7 @@ function mailValidation() {
         emailtextok.innerHTML = " &#x2714;";
         emailtextok.style.color = "#00ff00";
         emailtext.innerHTML = "";
+        isValid += 1;
     }
     else {
         form.classList.add("Invalid");
@@ -15,6 +18,7 @@ function mailValidation() {
         emailtext.innerHTML = "Email must be valid format";
         emailtext.style.color = "#ff3333";
         emailtextok.innerHTML = "";
+        isValid -= 1;
     }
 }
 
@@ -27,11 +31,13 @@ function nameValidation() {
         nametextok.innerHTML = " &#x2714;";
         nametextok.style.color = "#00ff00";
         nametext.innerHTML = "";
+        isValid += 1;
     }
     else {
         nametext.innerHTML = "Name required";
         nametext.style.color = "#ff3333";
         nametextok.innerHTML = "";
+        isValid -= 1;
     }
 }
 
@@ -44,11 +50,13 @@ function subjValidation() {
         subjtextok.innerHTML = " &#x2714;";
         subjtextok.style.color = "#00ff00";
         subjtext.innerHTML = "";
+        isValid += 1;
     }
     else {
         subjtext.innerHTML = "Subject must be 10 chars";
         subjtext.style.color = "#ff3333";
         subjtextok.innerHTML = "";
+        isValid -= 1;
     }
 }
 
@@ -61,11 +69,13 @@ function addrValidation() {
         addrtextok.innerHTML = " &#x2714;";
         addrtextok.style.color = "#00ff00";
         addrtext.innerHTML = "";
+        isValid += 1;
     }
     else {
         addrtext.innerHTML = "Address must be 25 chars";
         addrtext.style.color = "#ff3333";
         addrtextok.innerHTML = "";
+        isValid -= 1;
     }
 }
 
@@ -76,3 +86,12 @@ form.addEventListener('submit', () => {
     mailValidation();
     addrValidation();
 })
+
+if(isValid === 4) {
+    document.getElementById("submitButton").style.display = "none";
+}
+else {
+    document.getElementById("submitButton").style.display = "true";
+}
+
+console.log(isValid);
