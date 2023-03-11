@@ -3,7 +3,7 @@ var subjIsValid = 0;
 var mailIsValid = 0;
 var addrIsValid = 0;
 
-function mailValidation() {
+function mailValidation(mailIsValid) {
     var email = document.getElementById("email").value;
     const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
@@ -86,7 +86,7 @@ const form = document.getElementById('form');
 form.addEventListener('submit', () => {
     nameValidation();
     subjValidation();
-    mailValidation();
+    mailValidation(mailIsValid);
     addrValidation();
 })
 
