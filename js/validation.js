@@ -94,4 +94,4 @@ else {
     document.getElementById("submitButton").style.display = "none";
 }
 
-console.log(isValid.value);
+console.log(isValid);
