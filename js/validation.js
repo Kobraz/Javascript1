@@ -18,7 +18,7 @@ function mailValidation() {
         emailtext.innerHTML = "Email must be valid format";
         emailtext.style.color = "#ff3333";
         emailtextok.innerHTML = "";
-        isValid -= 1;
+        isValid += 0;
     }
 }
 
@@ -37,7 +37,7 @@ function nameValidation() {
         nametext.innerHTML = "Name required";
         nametext.style.color = "#ff3333";
         nametextok.innerHTML = "";
-        isValid -= 1;
+        isValid += 0;
     }
 }
 
@@ -56,7 +56,7 @@ function subjValidation() {
         subjtext.innerHTML = "Subject must be 10 chars";
         subjtext.style.color = "#ff3333";
         subjtextok.innerHTML = "";
-        isValid -= 1;
+        isValid += 0;
     }
 }
 
@@ -75,7 +75,7 @@ function addrValidation() {
         addrtext.innerHTML = "Address must be 25 chars";
         addrtext.style.color = "#ff3333";
         addrtextok.innerHTML = "";
-        isValid -= 1;
+        isValid += 0;
     }
 }
 
@@ -94,4 +94,4 @@ else {
     document.getElementById("submitButton").style.display = "true";
 }
 
-console.log(isValid);
+console.log(isValid.value);
