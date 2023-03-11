@@ -1,7 +1,7 @@
-var addr;
-var email;
-var name;
-var subj;
+var addr = "";
+var email = "";
+var name = "";
+var subj = "";
 
 
 function mailValidation() {
