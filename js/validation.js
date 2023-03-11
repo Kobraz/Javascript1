@@ -1,3 +1,9 @@
+var addr;
+var email;
+var name;
+var subj;
+
+
 function mailValidation() {
     var email = document.getElementById("email").value;
     const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
