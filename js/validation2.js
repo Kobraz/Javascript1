@@ -78,7 +78,7 @@ function addrValidation() {
 // })
 
 
-const form = document.document.querySelector('form');
+const form = document.querySelector('form');
 form.addEventListener('submit', () => {
     if (nameValidation() && subjValidation() && mailValidation() && addrValidation()) {
       console.log("OK");
