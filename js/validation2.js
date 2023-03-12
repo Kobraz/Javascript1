@@ -74,10 +74,10 @@ form.addEventListener('submit', () => {
     if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
         event.preventDefault();
       }
-    nameValidation();
-    subjValidation();
-    mailValidation();
-    addrValidation();
+    // nameValidation();
+    // subjValidation();
+    // mailValidation();
+    // addrValidation();
 })
 
 
