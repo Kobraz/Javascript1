@@ -69,25 +69,22 @@ function addrValidation() {
     }
 }
 
-// const form = document.getElementById('form');
-// form.addEventListener('submit', () => {
-//     if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
-//         event.preventDefault();
-//       }
-//     nameValidation();
-//     subjValidation();
-//     mailValidation();
-//     addrValidation();
-// })
-
 const form = document.getElementById('form');
-form.addEventListener('submit', (event) => {
-  if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
-    event.preventDefault(); // Prevents the default form submission behavior
-  } else {
-    console.log("tester...")
-  }
-});
+form.addEventListener('submit', () => {
+    nameValidation();
+    subjValidation();
+    mailValidation();
+    addrValidation();
+})
+
+// const form = document.getElementById('form');
+// form.addEventListener('submit', (event) => {
+//   if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
+//     event.preventDefault(); // Prevents the default form submission behavior
+//   } else {
+//     console.log("tester...")
+//   }
+// });
 
 
 
