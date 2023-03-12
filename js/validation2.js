@@ -70,10 +70,10 @@ function addrValidation() {
 }
 
 const form = document.getElementById('form');
-form.addEventListener('click', () => {
+form.addEventListener('submit', () => {
     nameValidation();
     subjValidation();
-    emailValidation();
+    mailValidation();
     addrValidation();
 })
 
