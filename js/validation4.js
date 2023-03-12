@@ -71,8 +71,13 @@ function addrValidation() {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', () => {
-    nameValidation();
-    subjValidation();
-    mailValidation();
-    addrValidation();
+    if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
+            event.preventDefault(); // Prevents the default form submission behavior
+          } else {
+            console.log("tester...")
+          }
+    // nameValidation();
+    // subjValidation();
+    // mailValidation();
+    // addrValidation();
 })
