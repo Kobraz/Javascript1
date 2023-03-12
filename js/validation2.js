@@ -69,16 +69,26 @@ function addrValidation() {
     }
 }
 
+// const form = document.getElementById('form');
+// form.addEventListener('submit', () => {
+//     if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
+//         event.preventDefault();
+//       }
+//     nameValidation();
+//     subjValidation();
+//     mailValidation();
+//     addrValidation();
+// })
+
 const form = document.getElementById('form');
-form.addEventListener('submit', () => {
-    if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
-        event.preventDefault();
-      }
-    // nameValidation();
-    // subjValidation();
-    // mailValidation();
-    // addrValidation();
-})
+form.addEventListener('submit', (event) => {
+  if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
+    event.preventDefault(); // Prevents the default form submission behavior
+  } else {
+    location.reload();
+  }
+});
+
 
 
 // const form = document.querySelector('form');
