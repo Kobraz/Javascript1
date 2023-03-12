@@ -85,7 +85,7 @@ form.addEventListener('submit', (event) => {
   if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
     event.preventDefault(); // Prevents the default form submission behavior
   } else {
-    location.reload();
+    document.reload();
   }
 });
 
