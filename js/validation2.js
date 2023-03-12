@@ -69,21 +69,21 @@ function addrValidation() {
     }
 }
 
-// const form = document.getElementById('form');
-// form.addEventListener('submit', () => {
-//     nameValidation();
-//     subjValidation();
-//     mailValidation();
-//     addrValidation();
-// })
-
-
-const form = document.querySelector('form');
+const form = document.getElementById('form');
 form.addEventListener('submit', () => {
-    event.preventDefault();
-    if (nameValidation() && subjValidation() && mailValidation() && addrValidation()) {
-      console.log("OK");
-    } else {
-      console.log("NOPE");
-    }
+    nameValidation();
+    subjValidation();
+    mailValidation();
+    addrValidation();
 })
+
+
+// const form = document.querySelector('form');
+// form.addEventListener('submit', () => {
+//     event.preventDefault();
+//     if (nameValidation() && subjValidation() && mailValidation() && addrValidation()) {
+//       console.log("OK");
+//     } else {
+//       console.log("NOPE");
+//     }
+// })
