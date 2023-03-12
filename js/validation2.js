@@ -71,10 +71,10 @@ function addrValidation() {
 
 const form = document.getElementById('form');
 // form.addEventListener('click', () => {
-    nameValidation();
-    subjValidation();
-    mailValidation();
-    addrValidation();
-})
+//     nameValidation();
+//     subjValidation();
+//     mailValidation();
+//     addrValidation();
+// })
 
 
