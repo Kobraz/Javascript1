@@ -28,7 +28,7 @@ main {
     align-items: center;
     width: 500px;
     height: 500px;
-    background: #373737;
+    background: #131313;
     border: 5px solid #810000;
     border-radius: 25px;
 }
@@ -55,7 +55,7 @@ h1 {
     position: relative;
 }
 
-#form #email {
+#form #mail {
     width: 300px;
     background: #292929;
     outline: none;
@@ -67,7 +67,7 @@ h1 {
     margin: 2px 0;
 }
 
-#form #email:focus {
+#form #mail:focus {
     border: 0.1px solid #fff;
     background-color: #131313;
 }
@@ -128,46 +128,60 @@ h1 {
     flex-direction: column;
 }
 
+.inputBox.success input {
+    border-color: #09c372;
+}
+
+.inputBox.error input {
+    border-color: #ff3860;
+}
+
+.inputBox .error {
+    color: #ff0000;
+    font-size: 11px;
+    height: 13px;
+    border-color: #ff3860;
+}
+
 #text {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 400;
 }
 
-#nametext #subjtext #emailtext #addrtext {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    
-}
 
-#nametextok #subjtextok #emailtextok #addrtextok {
+#nameTextOk #subjTextOk #emailTextOk #addrTextOk {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 400;
+    color: #09c372;
 }
 
-input[type=submit] {
+button[type=submit] {
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
     background-color: #292929;
     border: 0.1px solid #868686;
     width: 290px;
-    color: #868686;
+    color: #fff;
     padding: 12px 20px;
     margin: 12px;
     border-radius: 4px;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     font-family: 'Poppins', sans-serif;
     background-color: #191919;
     color: white;
-    font-weight: 300;
+    font-weight: 500;
     border: 1px solid #fff;
 }
 
 input[type=text] {
     border: 0.1px solid #868686;
+    font-size: 14px;
 }
 
 input[type=text]:active {

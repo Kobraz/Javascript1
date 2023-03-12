@@ -1,81 +1,78 @@
+function mailValidation() {
+    var email = document.getElementById("email").value;
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+    if (email.match(regex)) {
+        form.classList.add("Valid");
+        form.classList.remove("Invalid");
+        emailtextok.innerHTML = " &#x2714;";
+        emailtextok.style.color = "#00ff00";
+        emailtext.innerHTML = "";
+    }
+    else {
+        form.classList.add("Invalid");
+        form.classList.remove("Valid");
+        emailtext.innerHTML = "Email must be valid format";
+        emailtext.style.color = "#6e0000";
+        emailtextok.innerHTML = "";
+    }
+}
+
+function nameValidation() {
+    var name = document.getElementById("name").value;
+    var nameLength = name.length;
+    nametext.innerHTML = nameLength;
+    
+    if(name.length != 0) {
+        nametextok.innerHTML = " &#x2714;";
+        nametextok.style.color = "#00ff00";
+        nametext.innerHTML = "";
+    }
+    else {
+        nametext.innerHTML = "Name required";
+        nametext.style.color = "#6e0000";
+        nametextok.innerHTML = "";
+    }
+}
+
+function subjValidation() {
+    var subj = document.getElementById("subj").value;
+    var subjLength = subj.length;
+    subjtext.innerHTML = subjLength;
+    
+    if(subj.length >= 10) {
+        subjtextok.innerHTML = " &#x2714;";
+        subjtextok.style.color = "#00ff00";
+        subjtext.innerHTML = "";
+    }
+    else {
+        subjtext.innerHTML = "Subject must be 10 chars";
+        subjtext.style.color = "#6e0000";
+        subjtextok.innerHTML = "";
+    }
+}
+
+function addrValidation() {
+    var addr = document.getElementById("addr").value;
+    var addrLength = addr.length;
+    addrtext.innerHTML = addrLength;
+    
+    if(addr.length >= 25) {
+        addrtextok.innerHTML = " &#x2714;";
+        addrtextok.style.color = "#00ff00";
+        addrtext.innerHTML = "";
+    }
+    else {
+        addrtext.innerHTML = "Address must be 25 chars";
+        addrtext.style.color = "#6e0000";
+        addrtextok.innerHTML = "";
+    }
+}
+
 const form = document.getElementById('form');
-const formName = document.getElementById('name');
-const formSubj = document.getElementById('subj');
-const formMail = document.getElementById('mail');
-const formAddr = document.getElementById('addr');
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    validateInputs();
-});
-
-const setError = (element, message) => {
-    const inputBox = element.parentElement;
-    const errorDisplay = inputBox.querySelector('.error');
-
-    errorDisplay.innerText = message;
-    inputBox.classList.add('error');
-    inputBox.classList.remove('success');
-}
-
-const setSuccess = element => {
-    const inputBox = element.parentElement;
-    const errorDisplay = inputBox.querySelector('.error');
-
-    errorDisplay.innerText = '';
-    inputBox.classList.add('success');
-    inputBox.classList.remove('error');
-}
-
-const isValidEmail = email => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
-
-
-const validateInputs = () => {
-    const formNameValue = formName.value.trim();
-    const formSubjValue = formSubj.value.trim();
-    const formMailValue = formMail.value.trim();
-    const formAddrValue = formAddr.value.trim();
-    var nameTextOk = '';
-    var subjTextOk = '';
-    var emailTextOk = '';
-    var addrTextOk = '';
-
-    if(formNameValue === '') {
-        setError(formName, 'Name is required');
-    } else {
-        setSuccess(formName);
-        nameTextOk.innerHTML = " &#x2714;";
-    }
-
-    if(formSubjValue === '') {
-        setError(formSubj, 'Subject is required');
-    } else if(formSubjValue.length < 10 ) {
-        setError(formSubj, 'Subject must be at least 10 chars');
-    } else {
-        setSuccess(formSubj);
-        subjTextOk.innerHTML = " &#x2714;";
-    }
-
-    if(formMailValue === '') {
-        setError(formMail, 'E-mail is required');
-    } else if (!isValidEmail(formMailValue)) {
-        setError(formMail, 'Valid e-mail is required');
-    } else {
-        setSuccess(formMail);
-        emailTextOk.innerHTML = " &#x2714;";
-    }
-
-    if(formAddrValue === '') {
-        setError(formAddr, 'Address is required');
-    } else if(formAddrValue.length < 25 ) {
-        setError(formAddr, 'Address must be at least 25 chars');
-    } else {
-        setSuccess(formAddr);
-        addrTextOk.innerHTML = " &#x2714;";
-    }
-
-}
+form.addEventListener('submit', () => {
+    nameValidation();
+    subjValidation();
+    mailValidation();
+    addrValidation();
+})

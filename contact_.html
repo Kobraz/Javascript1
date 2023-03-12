@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/contact3.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/validation.js"></script>
     <title>Contact Us</title>
 </head>
 <body>
@@ -32,35 +33,32 @@
 
                     <h1 id="contact">Contact form</h1><i class="fa-solid fa-check"></i>
 
-                    <form id="form">
+                    <form id="form" action="/">
                         <div class="inputBox">
                             <p><label for="Name" id="label">Name:</label></p>
-                            <input type="text" id="name" name="name" placeholder="Enter name" maxlength="40" size="10" onkeydown="nameValidation()"><span id="nametextok"></span>
-                            <p><span id="nametext"></span></p>
+                            <input type="text" id="name" name="name" placeholder="Enter name" maxlength="40" size="10"><span id="nameTextOk"></span>
+                            <div class="error"></div>
                         </div>
                         <div class="inputBox">
                             <p><label for="Subject" id="label">Subject:</label></p>
-                            <input type="text" id="subj" name="subj" placeholder="Enter subject" maxlength="40" size="10" onkeydown="subjValidation()"><span id="subjtextok"></span>
-                            <p><span id="subjtext"></span></p>
+                            <input type="text" id="subj" name="subj" placeholder="Enter subject" maxlength="40" size="10"><span id="subjTextOk"></span>
+                            <div class="error"></div>
                         </div>
                         <div class="inputBox">
                             <p><label for="Email" id="label">E-mail:</label></p>
-                            <input type="text" id="email" name="email" placeholder="Enter e-mail address" onkeydown="mailValidation()"><span id="emailtextok"></span>
-                            <p><span id="emailtext"></span></p>
+                            <input type="text" id="mail" name="email" placeholder="Enter e-mail address"><span id="emailTextOk"></span>
+                            <div class="error"></div>
                         </div>
                         <div class="inputBox">
                             <p><label for="Address" id="label">Address:</label></p>
-                            <input type="text" id="addr" name="addr" placeholder="Enter address" maxlength="40" size="10" onkeydown="addrValidation()"><span id="addrtextok"></span>
-                            <p><span id="addrtext"></span></p>
+                            <input type="text" id="addr" name="addr" placeholder="Enter address" maxlength="50" size="10"><span id="addrTextOk"></span>
+                            <div class="error"></div>
                         </div>
-                        <div>
-                            <input type="submit" value="Submit">
-                        </div>
+                            <button type="submit" id="submitButton">Submit</button>
                     </form>
                 </div>
     </main>
 
-    <script src="js/validation3.js"></script>
 </body>
 </html>
 
