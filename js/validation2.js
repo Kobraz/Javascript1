@@ -21,7 +21,7 @@ function mailValidation() {
 function nameValidation() {
     var name = document.getElementById("name").value;
     var nameLength = name.length;
-    nametext.innerHTML = nameLength;
+    nameText.innerHTML = nameLength;
     
     if(name.length != 0) {
         nameTextOk.innerHTML = " &#x2714;";
