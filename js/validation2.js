@@ -1,5 +1,5 @@
 function mailValidation() {
-    var email = document.getElementById("email").value;
+    var email = document.getElementById("mail").value;
     const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
     if (email.match(regex)) {
