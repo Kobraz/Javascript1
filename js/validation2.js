@@ -38,7 +38,7 @@ function nameValidation() {
 function subjValidation() {
     var subj = document.getElementById("subj").value;
     var subjLength = subj.length;
-    subjtext.innerHTML = subjLength;
+    subjText.innerHTML = subjLength;
     
     if(subj.length >= 10) {
         subjTextOk.innerHTML = " &#x2714;";
@@ -55,7 +55,7 @@ function subjValidation() {
 function addrValidation() {
     var addr = document.getElementById("addr").value;
     var addrLength = addr.length;
-    addrtext.innerHTML = addrLength;
+    addrText.innerHTML = addrLength;
     
     if(addr.length >= 25) {
         addrTextOk.innerHTML = " &#x2714;";
