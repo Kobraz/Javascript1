@@ -86,8 +86,6 @@ form.addEventListener('submit', () => {
 //   }
 // });
 
-
-
 // const form = document.querySelector('form');
 // form.addEventListener('submit', () => {
 //     if (nameValidation() && subjValidation() && mailValidation() && addrValidation()) {
