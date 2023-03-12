@@ -3,15 +3,15 @@ function mailValidation() {
     const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
     if (email.match(regex)) {
-        form.classList.add("Valid");
-        form.classList.remove("Invalid");
+        form.classList.add("valid");
+        form.classList.remove("invalid");
         emailTextOk.innerHTML = " &#x2714;";
         emailTextOk.style.color = "#00ff00";
         emailText.innerHTML = "";
     }
     else {
-        form.classList.add("Invalid");
-        form.classList.remove("Valid");
+        form.classList.add("invalid");
+        form.classList.remove("valid");
         emailText.innerHTML = "Email must be valid format";
         emailText.style.color = "#ff3333";
         emailTextOk.innerHTML = "";

@@ -195,4 +195,10 @@ input[type=text]:active {
     background-color: #191919;
 }
 
+.valid {
+    color: blue;
+}
 
+.invalid {
+    color: purple;
+}
