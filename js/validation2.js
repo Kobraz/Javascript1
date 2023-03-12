@@ -71,6 +71,7 @@ function addrValidation() {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', () => {
+    event.preventDefault();
     nameValidation();
     subjValidation();
     mailValidation();
