@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+
+main {
+    justify-content: center;
+    display: flex;
+    gap: 4em;
+  }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #131313;
+    border: 5px solid #810000;
+    border-radius: 25px;
+}
+
+h1 {
+    position: relative;
+    font-size: 20px;
+    color: #f9f9f9;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#label {
+    position: relative;
+    font-size: 14px;
+    color: #f9f9f9;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#form {
+    position: relative;
+}
+
+#form #mail {
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: 0.1px solid #585858;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+    margin: 2px 0;
+}
+
+#form #mail:focus {
+    border: 0.1px solid #fff;
+    background-color: #131313;
+}
+
+#form #name {
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: 0.1px solid #585858;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+    margin: 2px 0;
+}
+
+#form #name:focus {
+    border: 0.1px solid #fff;
+    background-color: #131313;
+}
+
+#form #subj {
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: 0.1px solid #585858;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+    margin: 2px 0;
+}
+
+#form #subj:focus {
+    border: 0.1px solid #fff;
+    background-color: #131313;
+}
+
+#form #addr {
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: 0.1px solid #585858;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+    margin: 2px 0;
+}
+
+#form #addr:focus {
+    border: 0.1px solid #fff;
+    background-color: #131313;
+}
+
+#form #inputBox {    
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox.success input {
+    border-color: #09c372;
+}
+
+.inputBox.error input {
+    border-color: #ff3860;
+}
+
+.inputBox .error {
+    color: #ff0000;
+    font-size: 11px;
+    height: 13px;
+    border-color: #ff3860;
+}
+
+#text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#nameText #subjText #emailText #addrText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #09c372;
+}
+
+#nameTextOk #subjTextOk #emailTextOk #addrTextOk {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #09c372;
+}
+
+button[type=submit] {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #292929;
+    border: 0.1px solid #868686;
+    width: 290px;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    font-family: 'Poppins', sans-serif;
+    background-color: #191919;
+    color: white;
+    font-weight: 500;
+    border: 1px solid #fff;
+}
+
+input[type=text] {
+    border: 0.1px solid #868686;
+    font-size: 14px;
+}
+
+input[type=text]:active {
+    border: 0.1px solid #fff;
+    background-color: #191919;
+}
+
+
