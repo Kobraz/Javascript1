@@ -1,106 +1,81 @@
-var nameIsValid = 0;
-var subjIsValid = 0;
-var mailIsValid = 0;
-var addrIsValid = 0;
-
-function mailValidation(mailIsValid) {
-    var email = document.getElementById("email").value;
-    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-
-    if (email.match(regex)) {
-        form.classList.add("Valid");
-        form.classList.remove("Invalid");
-        emailtextok.innerHTML = " &#x2714;";
-        emailtextok.style.color = "#00ff00";
-        emailtext.innerHTML = "";
-        mailIsValid = 1;
-    }
-    else {
-        form.classList.add("Invalid");
-        form.classList.remove("Valid");
-        emailtext.innerHTML = "Email must be valid format";
-        emailtext.style.color = "#ff3333";
-        emailtextok.innerHTML = "";
-        mailIsValid = 0;
-    }
-}
-
-function nameValidation() {
-    var name = document.getElementById("name").value;
-    var nameLength = name.length;
-    nametext.innerHTML = nameLength;
-    
-    if(name.length != 0) {
-        nametextok.innerHTML = " &#x2714;";
-        nametextok.style.color = "#00ff00";
-        nametext.innerHTML = "";
-        nameIsValid = 1;
-    }
-    else {
-        nametext.innerHTML = "Name required";
-        nametext.style.color = "#ff3333";
-        nametextok.innerHTML = "";
-        nameIsValid = 0;
-    }
-}
-
-function subjValidation() {
-    var subj = document.getElementById("subj").value;
-    var subjLength = subj.length;
-    subjtext.innerHTML = subjLength;
-    
-    if(subj.length >= 10) {
-        subjtextok.innerHTML = " &#x2714;";
-        subjtextok.style.color = "#00ff00";
-        subjtext.innerHTML = "";
-        subjIsValid = 1;
-    }
-    else {
-        subjtext.innerHTML = "Subject must be 10 chars";
-        subjtext.style.color = "#ff3333";
-        subjtextok.innerHTML = "";
-        subjIsValid = 0;
-    }
-}
-
-function addrValidation() {
-    var addr = document.getElementById("addr").value;
-    var addrLength = addr.length;
-    addrtext.innerHTML = addrLength;
-    
-    if(addr.length >= 25) {
-        addrtextok.innerHTML = " &#x2714;";
-        addrtextok.style.color = "#00ff00";
-        addrtext.innerHTML = "";
-        addrIsValid = 1;
-    }
-    else {
-        addrtext.innerHTML = "Address must be 25 chars";
-        addrtext.style.color = "#ff3333";
-        addrtextok.innerHTML = "";
-        addrIsValid = 0;
-    }
-}
-
 const form = document.getElementById('form');
-form.addEventListener('submit', () => {
-    nameValidation();
-    subjValidation();
-    mailValidation(mailIsValid);
-    addrValidation();
-})
+const formName = document.getElementById('name');
+const formSubj = document.getElementById('subj');
+const formMail = document.getElementById('mail');
+const formAddr = document.getElementById('addr');
 
-var isValid = nameIsValid + subjIsValid + mailIsValid + addrIsValid;
+form.addEventListener('submit', e => {
+    e.preventDefault();
 
-if(isValid === 4) {
-    document.getElementById("submitButton").style.display = "true";
+    validateInputs();
+});
+
+const setError = (element, message) => {
+    const inputBox = element.parentElement;
+    const errorDisplay = inputBox.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputBox.classList.add('error');
+    inputBox.classList.remove('success');
 }
-else {
-    document.getElementById("submitButton").style.display = "none";
+
+const setSuccess = element => {
+    const inputBox = element.parentElement;
+    const errorDisplay = inputBox.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputBox.classList.add('success');
+    inputBox.classList.remove('error');
 }
 
-console.log("Name " + nameIsValid);
-console.log("Subj " + subjIsValid);
-console.log("Mail " + mailIsValid);
-console.log("Addr " + addrIsValid);
-console.log("Total " + isValid);
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+
+const validateInputs = () => {
+    const formNameValue = formName.value.trim();
+    const formSubjValue = formSubj.value.trim();
+    const formMailValue = formMail.value.trim();
+    const formAddrValue = formAddr.value.trim();
+    var nameTextOk = '';
+    var subjTextOk = '';
+    var emailTextOk = '';
+    var addrTextOk = '';
+
+    if(formNameValue === '') {
+        setError(formName, 'Name is required');
+    } else {
+        setSuccess(formName);
+        nameTextOk.innerHTML = " &#x2714;";
+    }
+
+    if(formSubjValue === '') {
+        setError(formSubj, 'Subject is required');
+    } else if(formSubjValue.length < 10 ) {
+        setError(formSubj, 'Subject must be at least 10 chars');
+    } else {
+        setSuccess(formSubj);
+        subjTextOk.innerHTML = " &#x2714;";
+    }
+
+    if(formMailValue === '') {
+        setError(formMail, 'E-mail is required');
+    } else if (!isValidEmail(formMailValue)) {
+        setError(formMail, 'Valid e-mail is required');
+    } else {
+        setSuccess(formMail);
+        emailTextOk.innerHTML = " &#x2714;";
+    }
+
+    if(formAddrValue === '') {
+        setError(formAddr, 'Address is required');
+    } else if(formAddrValue.length < 25 ) {
+        setError(formAddr, 'Address must be at least 25 chars');
+    } else {
+        setSuccess(formAddr);
+        addrTextOk.innerHTML = " &#x2714;";
+    }
+
+}
