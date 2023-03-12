@@ -78,8 +78,8 @@ function addrValidation() {
 // })
 
 
-const form = document.getElementById('form');
-form.addEventListener('click', () => {
+const form = document.document.querySelector('form');
+form.addEventListener('submit', () => {
     if (nameValidation() && subjValidation() && mailValidation() && addrValidation()) {
       console.log("OK");
     } else {
