@@ -69,12 +69,12 @@ function addrValidation() {
     }
 }
 
-// const form = document.getElementById('form');
-// form.addEventListener('submit', () => {
-//     nameValidation();
-//     subjValidation();
-//     mailValidation();
-//     addrValidation();
-// })
+const form = document.getElementById('form');
+form.addEventListener('submit', () => {
+    nameValidation();
+    subjValidation();
+    mailValidation();
+    addrValidation();
+})
 
 
