@@ -70,11 +70,11 @@ function addrValidation() {
 }
 
 const form = document.getElementById('form');
-// form.addEventListener('click', () => {
-//     nameValidation();
-//     subjValidation();
-//     mailValidation();
-//     addrValidation();
-// })
+form.addEventListener('click', () => {
+    nameValidation();
+    subjValidation();
+    mailValidation();
+    addrValidation();
+})
 
 
