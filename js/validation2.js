@@ -71,7 +71,9 @@ function addrValidation() {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', () => {
-    event.preventDefault();
+    if (!nameValidation() || !subjValidation() || !mailValidation() || !addrValidation()) {
+        event.preventDefault();
+      }
     nameValidation();
     subjValidation();
     mailValidation();
@@ -81,7 +83,6 @@ form.addEventListener('submit', () => {
 
 // const form = document.querySelector('form');
 // form.addEventListener('submit', () => {
-//     event.preventDefault();
 //     if (nameValidation() && subjValidation() && mailValidation() && addrValidation()) {
 //       console.log("OK");
 //     } else {
