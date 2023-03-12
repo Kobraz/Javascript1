@@ -79,7 +79,7 @@ function addrValidation() {
 
 
 const form = document.getElementById('submit');
-form.addEventListener('submit', () => {
+form.addEventListener('click', () => {
     if (nameValidation() && subjValidation() && mailValidation() && addrValidation()) {
       console.log("OK");
     } else {
