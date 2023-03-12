@@ -5,16 +5,16 @@ function mailValidation() {
     if (email.match(regex)) {
         form.classList.add("Valid");
         form.classList.remove("Invalid");
-        emailtextok.innerHTML = " &#x2714;";
-        emailtextok.style.color = "#00ff00";
-        emailtext.innerHTML = "";
+        emailTextOk.innerHTML = " &#x2714;";
+        emailTextOk.style.color = "#00ff00";
+        emailText.innerHTML = "";
     }
     else {
         form.classList.add("Invalid");
         form.classList.remove("Valid");
-        emailtext.innerHTML = "Email must be valid format";
-        emailtext.style.color = "#ff3333";
-        emailtextok.innerHTML = "";
+        emailText.innerHTML = "Email must be valid format";
+        emailText.style.color = "#ff3333";
+        emailTextOk.innerHTML = "";
     }
 }
 
@@ -24,14 +24,14 @@ function nameValidation() {
     nametext.innerHTML = nameLength;
     
     if(name.length != 0) {
-        nametextok.innerHTML = " &#x2714;";
-        nametextok.style.color = "#00ff00";
-        nametext.innerHTML = "";
+        nameTextOk.innerHTML = " &#x2714;";
+        nameTextOk.style.color = "#00ff00";
+        nameText.innerHTML = "";
     }
     else {
-        nametext.innerHTML = "Name required";
-        nametext.style.color = "#ff3333";
-        nametextok.innerHTML = "";
+        nameText.innerHTML = "Name required";
+        nameText.style.color = "#ff3333";
+        nameTextOk.innerHTML = "";
     }
 }
 
@@ -41,14 +41,14 @@ function subjValidation() {
     subjtext.innerHTML = subjLength;
     
     if(subj.length >= 10) {
-        subjtextok.innerHTML = " &#x2714;";
-        subjtextok.style.color = "#00ff00";
-        subjtext.innerHTML = "";
+        subjTextOk.innerHTML = " &#x2714;";
+        subjTextOk.style.color = "#00ff00";
+        subjText.innerHTML = "";
     }
     else {
-        subjtext.innerHTML = "Subject must be 10 chars";
-        subjtext.style.color = "#ff3333";
-        subjtextok.innerHTML = "";
+        subjText.innerHTML = "Subject must be 10 chars";
+        subjText.style.color = "#ff3333";
+        subjTextOk.innerHTML = "";
     }
 }
 
@@ -58,14 +58,14 @@ function addrValidation() {
     addrtext.innerHTML = addrLength;
     
     if(addr.length >= 25) {
-        addrtextok.innerHTML = " &#x2714;";
-        addrtextok.style.color = "#00ff00";
-        addrtext.innerHTML = "";
+        addrTextOk.innerHTML = " &#x2714;";
+        addrTextOk.style.color = "#00ff00";
+        addrText.innerHTML = "";
     }
     else {
-        addrtext.innerHTML = "Address must be 25 chars";
-        addrtext.style.color = "#ff3333";
-        addrtextok.innerHTML = "";
+        addrText.innerHTML = "Address must be 25 chars";
+        addrText.style.color = "#ff3333";
+        addrTextOk.innerHTML = "";
     }
 }
 
